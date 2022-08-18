@@ -1,0 +1,55 @@
+Here are the test cases:
+
+1.About functional test cases.
+-Check UI to verify if meet the design.
+-Click [write article] button and the 'edit box' below shold show.
+-Check combitibility in different OS and browsers.
+-Check if the page work well with weak network.
+-Check if the page have a nice pormpt when the network disconnects.
+-Check if the added content exist after the network recover.
+IN 'edit box':
+	-Input something that less than the maximum character limit.
+	-Input something that more than the maximum character limit.
+	-Input some special characters.
+	-Input some emoji to check if they can well displayed.
+	-Paste some words that lees than the maximum character limit to check if pasting work well.
+	-Paste some words that more than the maximum character limit to check if pasting work well.
+	-Paste formatted content to check if the format is maintained.
+	-Drag a file to upload.
+	-Drag some files to upload.
+	-Click [upload] button and should evoke the file selection of the system.
+	-Check if uploading worked after uploaded a file.
+	-Check if uploading worked after uploaded a file.
+	-Check the type of file when upload or drag:png,jpg,jpeg,pdf,word,xls,xlsx,etc.
+	-Check if the uploaded file display well in edit box.
+	-Refresh the page when edit content, to check if the page prompt like "Are you ensure to leave?"
+After post:
+	-Click [post] button to check if it works.
+	-Check if the format of posted content meet the edited version.
+	-Check if a new record added after posting.
+	-Check if the uploaded file display well after posting.
+
+2.About security test cases.
+-Upload the file with virus or porn to check if the website can identify it and block it.
+-Input content like :
+"<img src=x οnerrοr=alert(1)>
+<script>alert("1") </script>；"
+to check if the alert poped after posted.
+-Clear history of browser,then input the address of the page to check if users can visit the page without login.
+-Add parameter like "?id=1" to url to check if some new data added to the new loaded page.
+
+3.About performance test caces.
+-Check if the page work when 100 users input and post content at the same time.
+-Check if the page work when 100 users input and post content at the same time during a hour.
+
+4.About API.
+-Visit the API without authorization or token parameters to check if the visit works.
+-Check if the request/return parameters meet the spec of the API.
+-Basic check the request/return parameters of API about type, required field，custom code, etc.
+
+
+
+
+
+
+
